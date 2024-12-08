@@ -158,7 +158,7 @@ const EndpointsPage = () => {
             </tbody>
         </StyledTable>
 
-        <Subtitle>MELA FORMAT</Subtitle>
+        <Subtitle>MEALS FORMAT</Subtitle>
         <p>id: Long</p>
         <p>title: String</p>
         <p>description: String</p>
