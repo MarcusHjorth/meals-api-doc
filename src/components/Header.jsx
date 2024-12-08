@@ -49,7 +49,7 @@ const HeaderComp = () => {
 
             <nav>
                 <Ul>
-                    <Link to="/"><li>HomePage</li></Link>
+                    <Link to="/"><li>Home</li></Link>
                     <Link to="/vision"><li>Vision</li></Link>
                     <Link to="/endpoints"><li>Endpoints</li></Link>
                 </Ul>

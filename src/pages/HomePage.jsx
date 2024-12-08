@@ -18,19 +18,19 @@ const Container = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 0;
-
+        
         img{
             margin: auto;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
         }
     }
-
+    
     img{
         width: 200px;
         height: auto;
         border-radius: 10px;
         
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
 
