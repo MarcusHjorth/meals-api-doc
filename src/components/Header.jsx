@@ -45,7 +45,7 @@ const HeaderComp = () => {
 
     return ( 
         <Header>
-            <Link to="/*"><img src="../../public/mealsLogo.png" alt="Meals logo" /></Link>
+            <Link to="/"><img src="../../public/mealsLogo.png" alt="Meals logo" /></Link>
 
             <nav>
                 <Ul>
