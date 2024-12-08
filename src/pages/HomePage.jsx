@@ -73,7 +73,7 @@ const Homepage = () => {
             </Subtitle>
 
             <Container>
-                <img src="../../public/mealsLogo.png" alt="" />
+                <img src="/mealsLogo.png" alt="" />
 
                 <div>
                     <a href="https://meals.nerdshub.dk/api/meals" target="_blank">Link to API </a>
