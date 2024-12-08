@@ -13,13 +13,13 @@ export const Title = styled.h1`
 `;
 
 export const Middletitle = styled.h2`
-  color: #555;
+  
   margin-bottom: 1rem;
   text-align: center;
 `;
 
 export const Subtitle = styled.h3`
-  color: #555;
+  
   margin-bottom: 1rem;
   text-align: center;
 `;
