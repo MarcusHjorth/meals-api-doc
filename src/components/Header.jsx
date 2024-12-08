@@ -1,25 +1,42 @@
 import { Link } from "react-router";
 import styled from 'styled-components'
 
+const Header = styled.header`
+    height: 60px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    
+    padding: 10px 20px;
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+`
+
+
 const Ul = styled.ul`
     display: flex;
-    list-style: none;
     justify-content: space-between;
+    
+    list-style: none;
     margin: 0;
 
     li {
-        padding: 0 1rem;
+        padding: 0 1rem 0 0;
         text-decoration: none;
         font-style: bold;
         cursor: pointer;
     }
-`
-
-const Header = styled.header`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 20px;
 `
 
 
@@ -28,7 +45,7 @@ const HeaderComp = () => {
 
     return ( 
         <Header>
-            <Link to="/*"><img src="" alt="Meals logo" /></Link>
+            <Link to="/*"><img src="../../public/mealsLogo.png" alt="Meals logo" /></Link>
 
             <nav>
                 <Ul>
