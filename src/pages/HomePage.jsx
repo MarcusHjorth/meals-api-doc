@@ -9,33 +9,58 @@ import {
     Highlight,
 } from "../components/AboutPageContainer";
 
-const Div = styled.div`
+const Container = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
+    gap: 2rem;
 
-    a {
-        padding: 0.5rem 1rem;
-        background: linear-gradient(
-        150deg,
-        #f6bed9 0%,
-        #ff69b4 100%
-    );
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
 
-        border-radius: 5px;
-        margin-top: 1rem;
-        text-decoration: none;
-        color: black;
+        img{
+            margin: auto;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
     }
 
-    a:hover {
-        transition: all 0.1s ease-in-out;
-        scale: 1.1;
+    img{
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+        
     }
+
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+        a {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(
+                150deg,
+                #f6bed9 0%,
+                #ff69b4 100%
+                );
+                
+                border-radius: 5px;
+                margin-top: 1rem;
+                text-decoration: none;
+                color: black;
+            }
+            
+            a:hover {
+                transition: all 0.1s ease-in-out;
+                scale: 1.1;
+            }
+        }
 `
-
+            
 const Homepage = () => {
     return ( 
         <>
@@ -47,11 +72,14 @@ const Homepage = () => {
                 Welcome to MealsAPI - Come Out and Savor the Flavor!
             </Subtitle>
 
+            <Container>
+                <img src="../../public/mealsLogo.png" alt="" />
 
-            <Div>
-                <a href="https://meals.nerdshub.dk/api/meals" target="_blank">Link to API </a>
-                <a href="https://github.com/sanderMarcusChristensen/SP2-Meals" target="_blank">Link to github</a>
-            </Div>
+                <div>
+                    <a href="https://meals.nerdshub.dk/api/meals" target="_blank">Link to API </a>
+                    <a href="https://github.com/sanderMarcusChristensen/SP2-Meals" target="_blank">Link to github</a>
+                </div>
+            </Container>    
         </>
      );
 }
