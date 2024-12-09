@@ -44,8 +44,8 @@ const Container = styled.div`
             padding: 0.5rem 1rem;
             background: linear-gradient(
                 150deg,
-                #f6bed9 0%,
-                #ff69b4 100%
+                #f09136 0%,
+                #f09136 100%
                 );
                 
                 border-radius: 5px;

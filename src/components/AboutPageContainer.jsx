@@ -8,7 +8,7 @@ export const PageContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: #ff69b4;
+  color: #F09136;
   text-align: center;
 `;
 
